@@ -1,0 +1,301 @@
+:root {
+    --pink: #E75076;
+    --violet: #F9EAFF;
+    --black: #2F2E41;
+    --white: #fff;
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url(../font/gotham-rounded/GothamRounded-Bold.otf);
+}
+
+.uk-logo {
+    width: 85px;
+    padding: 0;
+}
+* > a:hover {
+    text-decoration: none;
+}
+body {
+    background-image: linear-gradient(to bottom right, #0F0C29, #302B63, #24243E);
+    font-size: 18px;
+    font-family: "Helvetica Neue";
+    color: var(--violet);
+    overflow-x: hidden;
+}
+.navbar .uk-navbar-nav>li>a {
+    text-transform: none;
+    font-size: 18px;
+}
+.navbar .uk-navbar-nav>li.uk-active>a {
+    color: var(--pink);
+    padding: 0;
+}
+.navbar .uk-navbar-nav>li>a {
+    padding: 0;
+    color: var(--violet);
+    transition: 0.3s;
+}
+.navbar .uk-navbar-nav>li>a:hover {
+    color: var(--pink);
+    transition: 0.3s;
+}
+.navbar .uk-navbar-nav>li {
+    margin-right: 75px;
+}
+.navbar .uk-navbar-nav>li:last-child {
+    margin-right: 0;
+}
+
+header {
+    padding-top: 50px;
+}
+
+.main-title {
+    color: var(--pink);
+    font-size: 40px;
+    font-family: GothamBold;
+    margin: 0;
+}
+.main-button {
+    background-color: var(--pink);
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 60px;
+    color: var(--violet);
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s linear;
+}
+.main-button:hover {
+    transition: 0.3s linear;
+    background-color: var(--violet);
+    color: var(--pink);
+}
+/* Main CSS */
+/* BANNER */
+.banner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.banner-left,
+.banner-right {
+    width: 50%;
+}
+.banner-left {
+    align-items: center;
+}
+.banner-left h3,
+.banner-left h4 {
+    color: var(--violet);
+}
+.banner-right img {
+    width: 560px;
+    float: right;
+}
+.banner-left h3 {
+    margin-bottom: 45px;
+    font-size: 32px;
+}
+.banner-left h4 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.banner-left-text {
+    width: 500px;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+.banner-leaf {
+    width: 55px;
+}
+.banner-leaf-one {
+    right: 60%;
+    top: 0;
+}
+.banner-leaf-two {
+    top: 10%;
+    right: 20%;
+}
+/* BANNER */
+
+/* Experience */
+.experience {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.exp-position {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 35px;
+}
+.experience-card span {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.exp-company {
+    font-style: italic;
+    font-weight: 500;
+}
+.experience-card {
+    background-image: url(../images/border.png);
+    width: 30%;
+    background-size: 100% 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+}
+.exp-wrap {
+    margin-top: 60px;
+}
+
+.experience .uk-flex:nth-of-type(1){
+    padding-bottom: 60px;
+}
+
+.experience .main-title {
+    margin-bottom: 100px;
+}
+
+.experience-tree {
+    width: 200px;
+}
+
+.experience-tree-two {
+    right: 0;
+    transform: rotateY(-180deg);
+}
+/* Experience */
+.skill {
+    padding-top: 65px;
+    padding-bottom: 70px;
+}
+.skill .main-title {
+    margin-bottom: 100px;
+}
+.skill-wrap {
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.skill-wrap div {
+    width: 170px;
+}
+.skill-circle {
+    width: 600px;
+}
+.skill-circle-one {
+    left: -400px;
+    top: -5%;
+}
+.skill-circle-two {
+    right: -400px;
+    bottom: 0;
+}
+/* Skill */
+/* Education */
+.education .main-title{
+    margin-bottom: 120px;
+}
+.education-wrap {
+    justify-content: space-between;
+}
+.education-item {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--violet);
+    border-radius: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.edu-year {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.edu-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+.edu-school {
+    font-weight: 100;
+    font-size: 20px;
+}
+.education-leaves {
+    width: 150px;
+}
+.education-leaves-one {
+    left: -20px;
+    top: 0;
+}
+.education-leaves-two {
+    right: -20px;
+    top: 0;
+    transform: rotateY(-180deg);
+}
+.education {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+/* Education */
+/* Footer */
+footer {
+    background-image: url(../images/footer_background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+footer .uk-navbar-nav>li {
+    margin-right: 75px;
+}
+footer .uk-navbar-nav>li>a {
+    padding: 0;
+    color: var(--violet);
+    transition: all .3s;
+}
+footer .uk-navbar-nav>li>a:hover {
+    color: #24243E;
+    transition: all .3s;
+}
+footer .uk-navbar-nav>li>a {
+    text-transform: none;
+    font-size: 18px;
+}
+.footer-link {
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-top: 70px;
+}
+.footer-social ul {
+    list-style: none;
+    float: right;
+}
+.footer-social svg {
+    color: var(--pink);
+    transition: all .3s;
+}
+.footer-social a.uk-icon-button {
+    background: var(--violet);
+    transition: all .3s;
+    margin-right: 30px;
+}
+.footer-social li:last-child a.uk-icon-button {
+    margin-right: 0;
+}
+.footer-social,
+.footer-copyright {
+    width: 50%;
+}
+.footer-social a.uk-icon-button:hover {
+    background-color: #24243E;
+    transition: all .3s;
+}
+.footer-social a.uk-icon-button:hover  svg {
+    color: var(--violet);
+}
+/* Footer */
