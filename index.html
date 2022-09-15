@@ -2,13 +2,16 @@
 <html>
     <head>
     <title>My Portfolio</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
     </head>
     <body>
         <header>
-            <div class="uk-container navbar">
-                <nav class="uk-navbar-container uk-margin uk-navbar">
+            
+            <div class="uk-container">
+                <nav class="uk-navbar-container uk-navbar navbar" uk-navbar="dropbar: true;" style="position: relative; z-index: 980;">
                     <div class="uk-navbar-left">
                         <a class="uk-navbar-item uk-logo" href="index.html">
                             <img src="images/logo.png" alt="logo">
@@ -16,40 +19,39 @@
                     </div>
                     <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">Home</a></li>
-                            <li><a href="#">My Projects</a></li>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">My Resume</a></li>
-                            <li><a href="#">Contact Me</a></li>
+                            <li class="uk-active"><a href="index.html">Home</a></li>
+                            <li><a href="projects.html">My Projects</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="https://drive.google.com/file/d/1HMZiBnkwL4PGBBDyXiK6aIY70Jfx3agm/view" target="_blank">My Resume</a></li>
+                            
                         </ul>
                     </div>
                 </nav>
             </div>
+            
         </header>
         <div class="banner">
-            <div class="uk-container">
-                <div class="uk-flex">
-                    <div class="banner-left uk-flex uk-position-relative" uk-scrollspy="cls: uk-animation-slide-left;  delay: 500">
-                        <img src="images/leaf.png" alt="leaf" class="uk-position-absolute banner-leaf banner-leaf-one" uk-parallax="y: 20; easing: 0;">
-                        <img src="images/leaf.png" alt="leaf" class="uk-position-absolute banner-leaf banner-leaf-two" uk-parallax="y: 40; easing: 0;">
-                        <div class="banner-left-wrap">
-                            <h3>Hello! I am</h3>
-                            <h2 class="main-title">Chuu Myat Thwe Oo</h2>
-                            <h4>UI/UX Designer and Frontend Developer</h4>
-                            <div class="banner-left-text">
-                                I want to build a bridge to connect between business goals and human needs by thinking based on empathy.
-                                <br>I also want to create user-friendly interfaces that enable users to understand how to use complex technical products.
-                            </div>
-                            
-                            <a href="" class="main-button">
-                                Explore Projects
-                            </a>
+            <div class="uk-container" uk-parallax="start: 100%; end: 100%;stroke: 100%; border-color: var(--pink)" style="border-bottom: 1px solid var(--violet);">
+                
+                <div class="banner-left  uk-text-center uk-position-relative" uk-scrollspy="cls: uk-animation-slide-left;  delay: 500">
+                    <img src="images/leaf.png" alt="leaf" class="uk-position-absolute banner-leaf banner-leaf-one" uk-parallax="y: 20; easing: 0;">
+                    <img src="images/leaf.png" alt="leaf" class="uk-position-absolute banner-leaf banner-leaf-two" uk-parallax="y: 40; easing: 0;">
+                    <div class="banner-left-wrap">
+                        <h3>Hello! I am</h3>
+                        <h2 class="main-title">Chuu Myat Thwe Oo</h2>
+                        <h4>UI/UX Designer and Frontend Developer</h4>
+                        <div class="banner-left-text">
+                            Are you looking for a UI/UX Designer background with expert in Frontend Technologies?
+                            <br> Don't worry for that ! Here I am ...
                         </div>
-                    </div>
-                    <div class="banner-right" uk-scrollspy="cls: uk-animation-slide-right;  delay: 500">
-                        <img src="images/banner_img.png" alt="banner_img">
+                        
+                        <a href="projects.html" class="main-button">
+                            Explore Projects
+                        </a>
                     </div>
                 </div>
+                    
+                
             </div>
         </div>
         <div class="experience">
@@ -158,49 +160,18 @@
                 </div>
             </div>
         </div>
-        <div class="education">
-            <div class="uk-container uk-position-relative">
-                <h2 class="main-title uk-text-center">
-                    Education Background
-                </h2>
-                <img src="images/leaves.png" alt="leaves" class="uk-position-absolute education-leaves education-leaves-one">
-                <img src="images/leaves.png" alt="leaves" class="uk-position-absolute education-leaves education-leaves-two">
-                <div class="education-wrap uk-flex" uk-scrollspy="cls: uk-animation-slide-bottom; target: .education-item; delay: 500">
-                    <div class="education-item uk-text-center">
-                        <div class="edu-name">
-                            High School Graduate
-                        </div>
-                        <div class="edu-year">( 2011 )</div>
-                        <div class="edu-school">BEHS ( 5 ), Pyay</div>
-                    </div>
-                    <div class="education-item uk-text-center" uk-scrollspy-class="uk-animation-slide-top">
-                        <div class="edu-name">
-                            Bachelor of Technology (IT)
-                        </div>
-                        <div class="edu-year">( 2015 )</div>
-                        <div class="edu-school">Pyay Technological University</div>
-                    </div>
-                    <div class="education-item uk-text-center">
-                        <div class="edu-name">
-                            Bachelor of Engineering (IT)
-                        </div>
-                        <div class="edu-year">( 2016 )</div>
-                        <div class="edu-school">Pyay Technological University</div>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
+        <!-- <div class="scroll-top" >
+            <a id="target" href="#top" class="uk-icon-button" uk-icon="arrow-up" uk-scroll=""></a>
+        </div> -->
         <footer>
             <div class="uk-container">
                 <div class="footer-link uk-flex">
                     <ul class="uk-navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">My Projects</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">My Resume</a></li>
-                        <li><a href="#">Contact Me</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">My Projects</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="https://drive.google.com/file/d/1HMZiBnkwL4PGBBDyXiK6aIY70Jfx3agm/view" target="_blank">My Resume</a></li>
+                       
                     </ul>
                 </div>
                 <div class="footer-bottom uk-flex">
@@ -232,8 +203,14 @@
                 </div>
             </div>
         </footer>
+        <div class="scroll-top-wrapper">
+            <span class="scroll-top-inner">
+                <span class="uk-icon" uk-icon="icon: arrow-up"></span>
+            </span>
+          </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

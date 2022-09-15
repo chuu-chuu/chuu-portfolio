@@ -1,0 +1,170 @@
+.about {
+    padding-top: 100px;
+    padding-bottom: 160px;
+}
+.about-left-bg {
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+.about-left {
+    width: 35%;
+}
+.about-right {
+    width: 60%;
+}
+.about-wrap {
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.about .uk-card-header img {
+    width: 200px;
+}
+.about .uk-card-header,
+.about .uk-card-body {
+    background: #FDDBD3;
+}
+.about .uk-card-header {
+    padding: 60px 40px 40px 40px;
+}
+.about .uk-card-body {
+    padding: 0px 40px;
+}
+.about .uk-card-body h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 0px;
+}
+.about .uk-card-body h4 {
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+.about .uk-card-body span {
+    width: 150px;
+    height: 3px;
+    background: var(--pink);
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.about .uk-card-footer {
+    background: var(--violet);
+}
+.about  .uk-card-footer ul {
+    list-style: none;
+}
+.about .uk-card-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+.about .uk-card-footer ul a {
+    background: var(--pink);
+    color: var(--violet);
+}
+.about .uk-card-footer ul a:hover {
+    background: var(--black);
+}
+.about .uk-card-footer ul li {
+    margin-right: 20px;
+}
+.about .uk-card-footer ul li:last-child {
+    margin-right: 0px;
+}
+.about-right div {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+}
+/* FAQ */
+/* Education */
+.education .main-title{
+    margin-bottom: 120px;
+}
+.education-wrap {
+    justify-content: space-between;
+}
+.education-item {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--violet);
+    border-radius: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.edu-year {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.edu-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+.edu-school {
+    font-weight: 100;
+    font-size: 20px;
+}
+.education-leaves {
+    width: 150px;
+}
+.education-leaves-one {
+    left: -20px;
+    top: 0;
+}
+.education-leaves-two {
+    right: -20px;
+    top: 0;
+    transform: rotateY(-180deg);
+}
+.education {
+    
+    padding-bottom: 100px;
+}
+/* Education */
+
+/* Qualifications */
+.qualification {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+.qualification .main-title {
+    margin-bottom: 80px;
+}
+.qualification-wrap {
+    justify-content: space-between;
+}
+.certificate {
+    background: var(--violet);
+    color: var(--black);
+    width: 24%;
+    border-radius: 15px;
+}
+.course {
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+.class {
+    font-weight: bold;
+    margin-top: 45px;
+}
+.certificate span {
+    width: 80px;
+    height: 2px;
+    background: #e75076;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.qualification-star {
+    width: 120px;
+    opacity: 0.2;
+    top: -50px;
+}
+.qualification-star-one {
+    transform: rotate(-90deg);
+}
+.qualification-star-two {
+    right: 0;
+}
+/* Qualifications */

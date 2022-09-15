@@ -1,0 +1,113 @@
+/* Design Portfolio */
+.design-project {
+    justify-content: space-between;
+}
+.design-image {
+    width: 50%;
+}
+.design-project:nth-of-type(1) .design-description {
+    background: #4ec2e9;
+}
+.design-project:nth-of-type(2) .design-description {
+    background: #f4b99a;
+}
+.design-project:nth-of-type(3) .design-description {
+    background: #e0f4ed;
+}
+.design-project:nth-of-type(3) .design-description img {
+    width: 150px;
+}
+.design-project {
+    margin-bottom: 60px;
+}
+.design-portfolio {
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+.design-portfolio .main-title {
+    margin-bottom: 80px;
+}
+.design-description {
+    width: 45%;
+    align-items: center;
+}
+.design-description img {
+    width: 200px;
+}
+.design-description-wrap {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.design-explaination {
+    color: var(--black);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: start;
+    letter-spacing: 1px;
+    line-height: 36px;
+}
+.design-portfolio-planet {
+    width: 120px;
+    right: -30px;
+    top: -20px;
+}
+/* Design Portfolio */
+
+/* Frontend Project */
+.frontend-portfolio {
+    padding-bottom: 150px;
+}
+.frontend-portfolio-planet {
+    width: 120px;
+    left: -30px;
+    top: -20px;
+    transform: rotate(-90deg);
+}   
+.frontend-portfolio .main-title {
+    margin-bottom: 100px;
+}
+.frontend-projects {
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.frontend-projects div {
+    width: 170px;
+}
+.frontend-projects a {
+    width: 170px;
+    transition: .1s;
+}
+.frontend-projects a:hover {
+    box-shadow: 0 0 25px #f9eaffa3;
+    transition: .3s;
+}
+.dcheck-detail-content p {
+    color: var(--black)
+}
+.dcheck-detail-content {
+    margin-bottom: 60px;
+}
+.dcheck-detail-content h2 {
+    font-size: 32px;
+    font-family: GothamBold;
+    margin-bottom: 30px;
+}
+#dcheck-detail .uk-modal-body {
+    padding: 100px 30px;
+}
+#dcheck-detail .uk-close {
+    color: var(--black)
+}
+#dcheck-detail .uk-close svg {
+    width: 20px;
+}
+.dcheck-detail-content a {
+    color: #354953;
+    padding-top: 30px;
+    display: inline-block;
+    transition: .3s;
+}
+.dcheck-detail-content a:hover {
+    color: #4ec2e9;
+    transition: .3s;
+}
