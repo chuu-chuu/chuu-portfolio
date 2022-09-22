@@ -277,6 +277,7 @@ footer .uk-navbar-nav>li>a {
     background: var(--violet);
     transition: all .3s;
     margin-right: 30px;
+    color: var(--pink);
 }
 .footer-social li:last-child a.uk-icon-button {
     margin-right: 0;
