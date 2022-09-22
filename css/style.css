@@ -78,12 +78,10 @@ header {
 .banner {
     padding-top: 60px;
 }
-.banner .uk-container {
-    padding-bottom: 60px;
-    /* border-bottom: 1px solid var(--violet); */
-}
+
 .banner-left {
     align-items: center;
+    padding-bottom: 80px;
 }
 .banner-left h3,
 .banner-left h4 {
@@ -235,23 +233,7 @@ header {
     width: 30px;
 }
 
-/* .scroll-top {
-    right: 50px;
-    position: fixed;
-    z-index: 111;
-    bottom: 200px;
-}
-a#target {
-    width: 50px;
-    height: 50px;
-    background: var(--violet);
-}
-#target svg {
-    width: 25px;
-    height: 25px;
-    color: var(--pink);
-} */
-/* Scroll Top */
+
 
 
 /* Footer */
@@ -311,3 +293,260 @@ footer .uk-navbar-nav>li>a {
     color: var(--violet);
 }
 /* Footer */
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+    .main-title {
+        font-size: 34px;
+    }
+    .banner-left h4 {
+        font-size: 26px;
+    }
+    .banner-left h3 {
+        font-size: 30px;
+    }
+    .exp-position {
+        font-size: 16px;
+    }
+    .experience-card {
+        width: 32%;
+    }
+    .skill-wrap {
+        margin-bottom: 40px;
+    }
+    .skill-wrap div {
+        width: 120px;
+    }
+    .scroll-top-wrapper {
+        bottom: 170px;
+    }
+    .experience-tree-two {
+        right: 40px;
+    }
+    .main-button {
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 50px;
+    }
+    footer .uk-navbar-nav>li:last-child {
+        margin-right: 0px;
+    }
+    
+}
+@media screen and (max-width: 960px) {
+    #side-menu ul li.uk-active a{
+        color: var(--black);
+    }
+    .banner-leaf-one {
+        right: 70%;
+    }
+    .banner-leaf-two {
+        top: 0;
+        right: 20%;
+    }
+    .side-menu-toggle {
+        color: var(--pink);
+    }
+    .side-menu-toggle svg {
+        width: 30px;
+        height: 30px;
+    }
+    #side-menu .uk-offcanvas-bar {
+        background-color: var(--pink);
+    }
+    #side-menu ul {
+        list-style: none;
+        padding-left: 0px;
+        text-align: center;
+    }
+    #side-menu ul li{
+        list-style: none;
+        margin-top: 40px;
+    }
+    #side-menu .uk-offcanvas-close {
+        color: var(--white);
+    }
+    .exp-company {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .experience .uk-flex:nth-of-type(1) {
+        padding-bottom: 15px;
+    }
+    .experience .main-title {
+        margin-bottom: 60px;
+    }
+    .experience {
+        padding-bottom: 40px;
+    }
+    .skill {
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .skill .main-title {
+        margin-bottom: 60px;
+    }
+    .exp-position {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .banner {
+        padding-top: 30px;
+    }
+    .skill-wrap div {
+        width: 100px;
+    }
+    .skill-wrap {
+        margin-bottom: 25px;
+    }
+    .experience-tree {
+        width: 120px;
+    }
+    .skill-circle {
+        width: 550px;
+    }
+ }
+
+ @media only screen and (max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
+    .uk-logo {
+        width: 65px;
+        padding: 0;
+    }
+    .banner-leaf,
+    .experience-tree {
+        display: none;
+    }
+    .main-title {
+        font-size: 24px;
+    }
+    .banner-left h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .banner-left h4 {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 20px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-left-text {
+        margin-bottom: 30px;
+    }
+    .banner {
+        padding-top: 10px;
+    }
+    .banner-left {
+        padding-bottom: 30px;
+    }
+    .main-button {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 45px;
+    }
+    .experience-card {
+        width: 100%;
+    }
+    .experience-card {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 15px;
+    }
+    .exp-position {
+        margin-top: 20px;
+    }
+    .experience {
+        padding-top: 30px;
+    }
+    .experience-card span {
+        margin-top: 10px;
+        margin-bottom: 10px; 
+    }
+    .experience-card-wrap {
+        flex-direction: column;
+    }
+    .experience .uk-flex:nth-of-type(1) {
+        padding-bottom: 0;
+    }
+    .experience .main-title {
+        margin-bottom: 30px;
+    }
+    .experience {
+        padding-bottom: 0px;
+    }
+    .skill .main-title {
+        margin-bottom: 20px;
+    }
+    .skill-wrap {
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+    }
+    .skill-wrap div {
+        width: 31%;
+        margin-bottom: 15px;
+    }
+    .skill-item .skill-wrap:nth-last-child(1) div:nth-of-type(1),
+    .skill-item .skill-wrap:nth-last-child(1) div:nth-of-type(4) {
+        display: none;
+    }
+    .footer-bottom {
+        flex-direction: column;
+    }
+    .footer-social, .footer-copyright {
+        width: 100%;
+    }
+    .footer-social ul {
+        float: none;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .footer-copyright {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .skill-circle {
+        width: 550px;
+        display: none;
+    }
+    footer {
+        background-size: 130% 100%;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    .footer-link {
+        margin-bottom: 25px;
+        padding-top: 0;
+    }
+    .footer-link .uk-navbar-nav {
+        flex-wrap: wrap;
+        width: 100%;
+        border-bottom: 1px solid var(--violet);
+        padding-bottom: 20px;
+    }
+    footer .uk-navbar-nav>li {
+        margin-right: 0;
+        width: 50%;
+        height: 50px;   
+    }
+    footer .uk-navbar-nav>li>a {
+        font-size: 14px;
+    }
+    .scroll-top-wrapper {
+        bottom: 80px;
+        right: 15px;
+    }
+    .main-button {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    
+ }
+

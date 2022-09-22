@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="My Portfolio | Chuu Myat Thwe Oo Portfolio">
+    <meta name="Description" content="My Portfolio | Chuu Myat Thwe Oo Portfolio">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="436">
+    <meta property="og:image:height" content="228">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:description" content="My Portfolio | Chuu Myat Thwe Oo Portfolio | ">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>My Portfolio | Home Page</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -9,7 +20,6 @@
     </head>
     <body>
         <header>
-            
             <div class="uk-container">
                 <nav class="uk-navbar-container uk-navbar navbar" uk-navbar="dropbar: true;" style="position: relative; z-index: 980;">
                     <div class="uk-navbar-left">
@@ -17,23 +27,48 @@
                             <img src="images/logo.png" alt="logo">
                         </a>
                     </div>
-                    <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
+                    <div class="uk-navbar-right ">
+                        <ul class="uk-navbar-nav uk-visible@m">
                             <li class="uk-active"><a href="index.html">Home</a></li>
                             <li><a href="projects.html">My Projects</a></li>
                             <li><a href="about.html">About Me</a></li>
                             <li><a href="https://drive.google.com/file/d/1HMZiBnkwL4PGBBDyXiK6aIY70Jfx3agm/view" target="_blank">My Resume</a></li>
                             
                         </ul>
+                        <a href="#side-menu" class="uk-toggle uk-hidden@m side-menu-toggle" uk-toggle>
+                            <span uk-icon="menu"></span>
+                        </a>
+                        <div id="side-menu" class="uk-offcanvas" uk-offcanvas="flip: true; overlay: true">
+                            <div class="uk-offcanvas-bar">
+
+                                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                                <ul>
+                                    <li class="uk-active">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="projects.html">My Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About Me</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://drive.google.com/file/d/1HMZiBnkwL4PGBBDyXiK6aIY70Jfx3agm/view" target="_blank">My Resume</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
                     </div>
+                    
                 </nav>
             </div>
-            
         </header>
         <div class="banner">
-            <div class="uk-container" uk-parallax="start: 100%; end: 100%;stroke: 100%; border-color: var(--pink)" style="border-bottom: 1px solid var(--violet);">
+            <div class="uk-container">
                 
-                <div class="banner-left  uk-text-center uk-position-relative" uk-scrollspy="cls: uk-animation-slide-left;  delay: 500">
+                <div class="banner-left  uk-text-center uk-position-relative" uk-scrollspy="cls: uk-animation-slide-left;  delay: 500"  uk-parallax="start: 100%; end: 100%;stroke: 100%; border-color: var(--pink)" style="border-bottom: 1px solid var(--violet);">
                     <img src="images/leaf.png" alt="leaf" class="uk-position-absolute banner-leaf banner-leaf-one" uk-parallax="y: 20; easing: 0;">
                     <img src="images/leaf.png" alt="leaf" class="uk-position-absolute banner-leaf banner-leaf-two" uk-parallax="y: 40; easing: 0;">
                     <div class="banner-left-wrap">
@@ -61,7 +96,7 @@
                 </h2>
                 <img src="images/tree.png" alt="tree" class="experience-tree experience-tree-one uk-position-absolute">
                 <img src="images/tree.png" alt="tree" class="experience-tree experience-tree-two uk-position-absolute">
-                <div class="uk-flex uk-text-center uk-flex-center">
+                <div class="uk-flex uk-text-center experience-card-wrap uk-flex-center">
                     <div class="experience-card">
                         <div class="exp-year">
                             Nov 2021 - Sept 2022
@@ -73,7 +108,7 @@
                         <div class="exp-company">Amaramedia Co., Ltd</div>
                     </div>
                 </div>
-                <div class="uk-flex uk-text-center uk-flex-center uk-flex-between">
+                <div class="uk-flex uk-text-center experience-card-wrap uk-flex-center uk-flex-between">
                     <div class="experience-card" >
                         <div class="exp-year">
                             May 2020 - Sept 2021
@@ -207,7 +242,7 @@
             <span class="scroll-top-inner">
                 <span class="uk-icon" uk-icon="icon: arrow-up"></span>
             </span>
-          </div>
+        </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>

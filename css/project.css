@@ -24,6 +24,21 @@
     padding-top: 80px;
     padding-bottom: 130px;
 }
+.design-portfolio .design-project:nth-of-type(1) .design-image{
+    background: #4ec1e8;
+    display: flex;
+    align-items: center;
+}
+.design-portfolio .design-project:nth-of-type(2) .design-image{
+    background: #f4b99a;
+    display: flex;
+    align-items: center;
+}
+.design-portfolio .design-project:nth-of-type(3) .design-image {
+    background: #e0f4ed;
+    display: flex;
+    align-items: center;
+}
 .design-portfolio .main-title {
     margin-bottom: 80px;
 }
@@ -110,4 +125,130 @@
 .dcheck-detail-content a:hover {
     color: #4ec2e9;
     transition: .3s;
+}
+
+@media screen and (max-width: 1200px)  {
+    .design-description img {
+        width: 120px;
+    }
+    .design-image {
+        width: 35%;
+    }
+    .design-description {
+        width: 62%;
+        align-items: center;
+    }
+    .design-portfolio-planet {
+        right: 40px;
+    }
+    .design-project:nth-of-type(3) .design-description img {
+        width: 120px;
+    }
+    .design-description-wrap {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .design-project {
+        margin-bottom: 25px;
+    }
+
+    .design-explaination {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        line-height: 28px;
+    }
+    .design-portfolio .main-title {
+        margin-bottom: 50px;
+    }
+    .frontend-projects div {
+        width: 130px;
+    }
+    .frontend-projects a {
+        width: 130px;
+    }
+    .frontend-portfolio-planet {
+        left: 40px;
+    }
+}
+
+@media screen and (max-width: 960px)  { 
+    
+    .frontend-portfolio-planet {
+        width: 80px;
+    }
+    .design-explaination {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    .design-project:nth-of-type(3) .design-description img {
+        width: 100px;
+    }
+    .design-portfolio-planet {
+        width: 80px;
+    }
+    .design-portfolio {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .frontend-portfolio .main-title {
+        margin-bottom: 60px;
+    }
+    .frontend-projects a,
+    .frontend-projects div {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .design-image {
+        display: none!important;
+    }
+    .design-description {
+        width: 100%;
+    }
+    .design-description-wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .design-portfolio-planet,
+    .frontend-portfolio-planet {
+        display: none;
+    }
+    .design-portfolio .main-title {
+        margin-bottom: 25px;
+    }
+    .design-portfolio {
+        padding-top: 15px;
+        padding-bottom: 45px;
+    }
+    .frontend-projects {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .frontend-projects div {
+        display: none;
+    }
+    .frontend-projects a {
+        width: 31%;
+        margin-bottom: 15px;
+    }
+    .frontend-portfolio {
+        padding-bottom: 50px;
+    }
+    .frontend-portfolio .main-title {
+        margin-bottom: 30px;
+    }
+    .dcheck-detail-content h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .dcheck-detail-content {
+        margin-bottom: 25px;
+    }
 }

@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="My Portfolio | Chuu Myat Thwe Oo Portfolio">
+    <meta name="Description" content="My Portfolio | Chuu Myat Thwe Oo Portfolio">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="436">
+    <meta property="og:image:height" content="228">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:description" content="My Portfolio | Chuu Myat Thwe Oo Portfolio | ">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>My Portfolio | About Page</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,13 +28,38 @@
                         </a>
                     </div>
                     <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
+                        <ul class="uk-navbar-nav uk-visible@m">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="projects.html">My Projects</a></li>
                             <li class="uk-active"><a href="about.html">About Me</a></li>
                             <li><a href="https://drive.google.com/file/d/1HMZiBnkwL4PGBBDyXiK6aIY70Jfx3agm/view" target="_blank">My Resume</a></li>
                            
                         </ul>
+                        <a href="#side-menu" class="uk-toggle uk-hidden@m side-menu-toggle" uk-toggle>
+                            <span uk-icon="menu"></span>
+                        </a>
+                        <div id="side-menu" class="uk-offcanvas" uk-offcanvas="flip: true; overlay: true">
+                            <div class="uk-offcanvas-bar">
+
+                                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="projects.html">My Projects</a>
+                                    </li>
+                                    <li class="uk-active">
+                                        <a href="about.html">About Me</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://drive.google.com/file/d/1HMZiBnkwL4PGBBDyXiK6aIY70Jfx3agm/view" target="_blank">My Resume</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -86,7 +122,10 @@
                             evaluate user requirements in collaboration with Product Manager and how to
                             illustrate design ideas using storyboards, process flows, or sitemaps.
                         </div>
-                        <a class="main-button" href="https://drive.google.com/file/d/1HMZiBnkwL4PGBBDyXiK6aIY70Jfx3agm/view" target="_blank">View My Resume</a>
+                        <div>
+                            <a class="main-button" href="https://drive.google.com/file/d/1HMZiBnkwL4PGBBDyXiK6aIY70Jfx3agm/view" target="_blank">View My Resume</a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -202,8 +241,14 @@
                 </div>
             </div>
         </footer>
+        <div class="scroll-top-wrapper">
+            <span class="scroll-top-inner">
+                <span class="uk-icon" uk-icon="icon: arrow-up"></span>
+            </span>
+        </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

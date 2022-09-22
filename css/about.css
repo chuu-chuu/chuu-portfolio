@@ -168,3 +168,192 @@
     right: 0;
 }
 /* Qualifications */
+
+@media screen and (max-width: 1200px)  { 
+    .about .uk-card-header {
+        padding: 40px 40px 40px 40px;
+    }
+    .education-leaves-two {
+        right: 40px;
+    }
+    .education-leaves-one {
+        left: 40px; 
+    }
+    .education-leaves {
+        width: 120px;
+    }
+    .qualification-star-two {
+        right: 40px;
+    }
+}
+@media screen and (max-width: 960px)  {
+    .about {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .about-wrap {
+        padding-top: 60px;
+        flex-direction: column;
+    }
+    .about-left {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about .uk-card-body h4 {
+        margin-bottom: 40px;
+    }
+    .about .uk-card-body h3,
+    .about .uk-card-body span {
+        display: none;
+    }
+    .about .uk-card-body {
+        padding: 0px 70px;
+    }
+    .about-right {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .about-right .main-button {
+        margin-left: auto;
+    }
+    .about-right div:last-child {
+        text-align: center;
+    }
+    .education-leaves {
+        width: 80px;
+    }
+    .education .main-title {
+        margin-bottom: 80px;
+    }
+    .edu-school {
+        font-weight: 100;
+        font-size: 16px;
+    }
+    .edu-name {
+        font-size: 16px;
+    }
+    .education-item {
+        width: 32%;
+    }
+    .certificate {
+        width: 48%;
+        margin-bottom: 25px;
+    }
+    .qualification-wrap {
+        flex-wrap: wrap;
+    }
+    .qualification-star {
+        width: 80px;
+    }
+    .qualification {
+        padding-top: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 640px)  { 
+    .about-wrap {
+        padding-top: 30px;
+    }
+    .about-left {
+        width: 100%;
+    }
+    .about .uk-card-header img {
+        width: 80px;
+    }
+    .about .uk-card-header, .about .uk-card-body {
+        background: none;
+    }
+    .about .uk-card-default {
+        background: none;
+    }
+    .about .uk-card-header {
+        padding: 0;
+    }
+    .about .uk-card-body h4 {
+        color: var(--violet);
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .about {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .about .uk-card-header {
+        float: left;
+    }
+    .about .uk-card-body {
+        padding: 0 15px;
+    }
+    .about .uk-card-body h3, .about .uk-card-body span {
+        display: block;
+        font-size: 16px;
+        color: var(--violet);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about .uk-card-body h4 {
+        color: var(--violet);
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    .about .uk-card-body span {
+        margin-top: 10px;
+    }
+    .about .uk-card-footer {
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
+    .about-right {
+        margin-top: 25px;
+    }
+    .about-right div {
+        margin-bottom: 25px;
+    }
+    .education-leaves {
+        display: none;
+    }
+    .education .main-title {
+        margin-bottom: 40px;
+    }
+    .education-wrap {
+        flex-wrap: wrap;
+    }
+    .education-item {
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 15px;
+    }
+    .edu-year {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .qualification-star {
+        display: none;
+    }
+    .education {
+        padding-bottom: 30px;
+    }
+    .qualification .main-title {
+        margin-bottom: 30px;
+    }
+    .certificate {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .class {
+        margin-top: 25px;
+    }
+    .course {
+        margin-bottom: 25px;
+    }
+    .certificate span {
+        margin-bottom: 10px;
+    }
+    .qualification {
+        padding-bottom: 20px;
+    }
+}
