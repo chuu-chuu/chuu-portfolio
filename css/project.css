@@ -251,4 +251,9 @@
     .dcheck-detail-content {
         margin-bottom: 25px;
     }
+    #dcheck-detail .uk-modal-body {
+        padding: 50px 15px;
+    }
+    
 }
+
