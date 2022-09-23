@@ -18,7 +18,15 @@
     <link rel="stylesheet" href="css/style.css">
     
     </head>
+    <div class="preloader js-preloader flex-center">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
     <body>
+        
         <header>
             <div class="uk-container">
                 <nav class="uk-navbar-container uk-navbar navbar" uk-navbar="dropbar: true;" style="position: relative; z-index: 980;">
@@ -211,7 +219,7 @@
                 </div>
                 <div class="footer-bottom uk-flex">
                     <div class="footer-copyright">
-                        Copyright © 2022 chuuportfolio.com
+                        Copyright © 2022 chuu-portfolio
                     </div>
                     <div class="footer-social">
                         <ul class="uk-flex">
@@ -243,9 +251,16 @@
                 <span class="uk-icon" uk-icon="icon: arrow-up"></span>
             </span>
         </div>
+        
         <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.preloadinator.min.js"></script>
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
         <script src="js/index.js"></script>
+        <script>
+            $('.js-preloader').preloadinator({
+                minTime: 2000
+            });
+        </script>
     </body>
 </html>

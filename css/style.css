@@ -10,6 +10,8 @@
     src: url(../font/gotham-rounded/GothamRounded-Bold.otf);
 }
 
+
+
 .uk-logo {
     width: 85px;
     padding: 0;
@@ -22,8 +24,99 @@ body {
     font-size: 18px;
     font-family: "Helvetica Neue";
     color: var(--violet);
-    overflow-x: hidden;.banner-right img
+    overflow-x: hidden;
+    margin: 0;
 }
+/* Preloader */
+
+
+section {
+	min-height: 100vh;
+}
+
+section h1 {
+	margin: 0 0 30px 0;
+	width: 100%;
+	font-size: 40px;
+	font-weight: 400;
+	color: #FFF;
+}
+
+section a {
+	display: inline-block;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid #FFF;
+    border-radius: 100px;
+    color: #FFF;
+   -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+section a:hover, section a:focus {
+	background: #FFF;
+	color: #0AC2D2;
+}
+
+
+
+.flex-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--pink);
+    z-index: 999;
+}
+
+.dots .dot {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin: 0 10px 0 10px;
+	border-radius: 50%;
+	background: var(--violet);
+	-webkit-animation: dot-dot-dot 1.4s linear infinite;
+	animation: dot-dot-dot 1.4s linear infinite;
+}
+
+.dots .dot:nth-child(2) {
+	animation-delay: .2s;
+}
+
+.dots .dot:nth-child(3) {
+	animation-delay: .4s;
+}
+
+@keyframes dot-dot-dot {
+	0%, 60%, 100% {
+		-webkit-transform: initial;
+    	-ms-transform: initial;
+        transform: initial;
+	}
+	30% {
+		-webkit-transform: translateY(-25px);
+    	-ms-transform: translateY(-25px);
+        transform: translateY(-25px);
+	}
+}
+/* Preloader */
 .navbar .uk-navbar-nav>li>a {
     text-transform: none;
     font-size: 18px;
@@ -337,6 +430,7 @@ footer .uk-navbar-nav>li>a {
     
 }
 @media screen and (max-width: 960px) {
+    
     #side-menu ul li.uk-active a{
         color: var(--black);
     }
@@ -411,6 +505,16 @@ footer .uk-navbar-nav>li>a {
  }
 
  @media only screen and (max-width: 640px) {
+    .dots .dot {
+        width: 15px;
+        height: 15px;
+        margin: 0 5px 0 5px;
+        border-radius: 50%;
+        background: var(--violet);
+        -webkit-animation: dot-dot-dot 1.4s linear infinite;
+        animation: dot-dot-dot 1.4s linear infinite;
+    }
+     
     body {
         font-size: 14px;
     }

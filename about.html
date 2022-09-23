@@ -18,6 +18,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
     </head>
+    <div class="preloader js-preloader flex-center">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
     <body>
         <header>
             <div class="uk-container navbar">
@@ -145,7 +152,7 @@
                         <div class="edu-year">( 2011 )</div>
                         <div class="edu-school">BEHS ( 5 ), Pyay</div>
                     </div>
-                    <div class="education-item uk-text-center" uk-scrollspy-class="uk-animation-slide-top">
+                    <div class="education-item uk-text-center">
                         <div class="edu-name">
                             Bachelor of Technology (IT)
                         </div>
@@ -214,7 +221,7 @@
                 </div>
                 <div class="footer-bottom uk-flex">
                     <div class="footer-copyright">
-                        Copyright © 2022 chuuportfolio.com
+                        Copyright © 2022 chuu-portfolio
                     </div>
                     <div class="footer-social">
                         <ul class="uk-flex">
@@ -247,8 +254,14 @@
             </span>
         </div>
         <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.preloadinator.min.js"></script>
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
         <script src="js/index.js"></script>
+        <script>
+            $('.js-preloader').preloadinator({
+                minTime: 2000
+            });
+        </script>
     </body>
 </html>
